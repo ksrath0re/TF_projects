@@ -4,7 +4,7 @@ import numpy as np
 
 
 # Load training and eval data
-(train_data, train_labels), (eval_data, eval_labels) = datasets.mnist.load_data()
+(train_data, train_labels), (eval_data, eval_labels) = tf.keras.datasets.mnist.load_data()
 
 # Normalize pixel values to be between 0 and 1
 train_data = train_data.reshape(60000,28,28,1)
